@@ -34,14 +34,14 @@ export const LoginDialog = ({ onLogin }: LoginDialogProps) => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="ghost" className="gap-2 text-black">
+      <Button variant="ghost" className="gap-2 text-black">
           Login
           <User className="h-5 w-5" />
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Login</DialogTitle>
+        <DialogTitle className="text-3xl font-bold">Login</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <Input
@@ -53,8 +53,14 @@ export const LoginDialog = ({ onLogin }: LoginDialogProps) => {
                 handleLogin();
               }
             }}
+            className="border-2 border-gray-300 rounded-md"
           />
-          <Button onClick={handleLogin} className="text-black">Login</Button>
+          <Button 
+            onClick={handleLogin} 
+            className="bg-[#FFD4B8] text-black hover:bg-[#FFD4B8]/80"
+          >
+            Login
+          </Button>
         </div>
       </DialogContent>
     </Dialog>
