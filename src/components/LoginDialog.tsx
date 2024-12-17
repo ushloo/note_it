@@ -34,7 +34,10 @@ export const LoginDialog = ({ onLogin }: LoginDialogProps) => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-      <Button variant="ghost" className="gap-2 text-black">
+      <Button 
+          variant="ghost" 
+          className="gap-2 text-black text-base" // Increased text size from default
+        >
           Login
           <User className="h-5 w-5" />
         </Button>
@@ -57,7 +60,7 @@ export const LoginDialog = ({ onLogin }: LoginDialogProps) => {
           />
           <Button 
             onClick={handleLogin} 
-            className="bg-[#FFD4B8] text-black hover:bg-[#FFD4B8]/80"
+            className="bg-[#FFD4B8] text-black hover:bg-[#FFD4B8]/80 text-base" // Also increased text size for login button in dialog
           >
             Login
           </Button>
