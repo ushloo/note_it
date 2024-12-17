@@ -19,7 +19,7 @@ const Index = () => {
     };
     setNotes((prev) => [...prev, newNote]);
     toast({
-      title: "Note created",
+      title: "Note Created",
       description: "A new note has been created",
     });
   };
@@ -27,7 +27,7 @@ const Index = () => {
   const deleteNote = (id: string) => {
     setNotes((prev) => prev.filter((note) => note.id !== id));
     toast({
-      title: "Note deleted",
+      title: "Note Deleted",
       description: "The note has been deleted",
     });
   };
