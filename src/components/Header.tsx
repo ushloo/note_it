@@ -25,7 +25,7 @@ export const Header = ({ onAddNote }: HeaderProps) => {
             <Button
               onClick={onAddNote}
               variant="secondary"
-              className="bg-[#FFD4B8] hover:bg-[#FFD4B8]/80"
+              className="bg-[#FFC695] hover:bg-[#FFD4B8]/80"
             >
               <Plus className="h-5 w-5" />
             </Button>
