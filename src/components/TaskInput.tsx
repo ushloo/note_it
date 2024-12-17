@@ -31,7 +31,7 @@ export const TaskInput = ({ onAddTask }: TaskInputProps) => {
       <Button
         variant="secondary"
         size="sm"
-        className="bg-[#FFD4B8] hover:bg-[#FFD4B8]/80"
+        className="bg-[#FFC695] hover:bg-[#FFC695]/80"
         onClick={handleAddTask}
       >
         Add

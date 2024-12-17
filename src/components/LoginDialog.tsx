@@ -60,7 +60,7 @@ export const LoginDialog = ({ onLogin }: LoginDialogProps) => {
           />
           <Button 
             onClick={handleLogin} 
-            className="bg-[#FFD4B8] text-black hover:bg-[#FFD4B8]/80 text-base" // Also increased text size for login button in dialog
+            className="bg-[#FFC695] text-black hover:bg-[#FFD4B8]/80 text-base" // Also increased text size for login button in dialog
           >
             Login
           </Button>
